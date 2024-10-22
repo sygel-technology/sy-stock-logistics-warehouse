@@ -17,7 +17,11 @@ Odoo Warehouse Management Addons
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[sale_order_line_multi_warehouse_widget](sale_order_line_multi_warehouse_widget/) | 16.0.1.0.0 |  | Show availability in warehouses in sale order lines
 
 [//]: # (end addons)
 

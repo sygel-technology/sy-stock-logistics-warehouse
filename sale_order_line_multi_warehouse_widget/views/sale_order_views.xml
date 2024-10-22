@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 Manuel Regidor <manuel.regidor@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="so_line_multi_warehouse_widget_view_order_form" model="ir.ui.view">
+        <field name="name">so.line.multi.warehouse.widget.view.order.form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form" />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//field[@name='order_line']//tree//field[@name='product_uom_qty']"
+                position="after"
+            >
+                <!-- Needed for qty_at_date_by_warehouse_widget widget -->
+                <field name="qty_by_warehouse" invisible="1" />
+                <field name="display_qty_by_warehouse_widget" invisible="1" />
+            </xpath>
+            <xpath
+                expr="//field[@name='order_line']//tree//widget[@name='qty_at_date_widget']"
+                position="after"
+            >
+                <widget name="qty_at_date_by_warehouse_widget" width="20px" />
+            </xpath>
+        </field>
+    </record>
+</odoo>
