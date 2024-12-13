@@ -16,9 +16,6 @@ Odoo Warehouse Management Addons
 <!-- prettier-ignore-start -->
 
 [//]: # (addons)
-
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
-
 [//]: # (end addons)
 
 <!-- prettier-ignore-end -->
