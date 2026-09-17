@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Alberto Martínez <alberto.martinez@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <record id="external_stock_inventory_config_view_form" model="ir.ui.view">
+        <field name="name">external.stock.inventory.config.view.form</field>
+        <field name="model">external.stock.inventory.config</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <field
+                        name="state"
+                        widget="statusbar"
+                        options="{'clickable': '1'}"
+                    />
+                    <button
+                        name="update_external_stock"
+                        type="object"
+                        class="btn-primary"
+                        invisible="state == 'disabled'"
+                        groups="base.group_system"
+                        string="Create Inventory Adjustment"
+                    />
+                    <button
+                        name="test_connection"
+                        type="object"
+                        class="btn-secondary"
+                        string="Test Connection"
+                    />
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button
+                            type="object"
+                            name="action_view_inventory_ids"
+                            class="oe_stat_button"
+                            icon="fa-cube"
+                            invisible="not count_stock_inventory"
+                        >
+                            <field
+                                name="count_stock_inventory"
+                                string="External Inventory Adjustments"
+                                widget="statinfo"
+                                readonly="1"
+                            />
+                        </button>
+                    </div>
+                    <group>
+                        <group name="main_options">
+                            <field name="name" />
+                            <field name="supplier_id" />
+                            <field name="location_id" />
+                            <field name="company_id" invisible="True" />
+                        </group>
+                        <group name="secondary_options">
+                            <field name="manual_method" />
+                            <field name="product_limit" />
+                            <field name="start_offset" />
+                            <field name="batch_size" />
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="external_stock_inventory_config_view_tree" model="ir.ui.view">
+        <field name="name">external.stock.inventory.config.view.tree</field>
+        <field name="model">external.stock.inventory.config</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+                <field name="supplier_id" />
+                <field name="location_id" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="external_stock_inventory_config_action" model="ir.actions.act_window">
+        <field name="name">External Inventory Adjustments Configuration</field>
+        <field name="res_model">external.stock.inventory.config</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+    </record>
+
+    <menuitem
+        id="external_stock_inventory_config_menu"
+        name="External Inventory Adjustments Configuration"
+        action="external_stock_inventory_config_action"
+        parent="stock.menu_warehouse_config"
+        sequence="10"
+    />
+
+</odoo>
