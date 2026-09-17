@@ -1,0 +1,471 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* base_external_stock
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-22 10:02+0000\n"
+"PO-Revision-Date: 2026-09-22 12:28+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__count_stock_quants
+msgid "# Adjustments"
+msgstr "# Ajustes"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__message_needaction
+msgid "Action Needed"
+msgstr "Acción necesaria"
+
+#. module: base_external_stock
+#. odoo-python
+#: code:addons/base_external_stock/models/external_stock_inventory_config.py:0
+#, python-format
+msgid "An error happened during the connection test"
+msgstr "Ha ocurrido un error durante el test de conexión"
+
+#. module: base_external_stock
+#: model:ir.model.fields.selection,name:base_external_stock.selection__external_stock_inventory_config__manual_method__async
+msgid "Asyncronous"
+msgstr "Asíncrono"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__message_attachment_count
+msgid "Attachment Count"
+msgstr "Nº de adjuntos"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory_config__batch_size
+msgid "Batch Size"
+msgstr "Tamaño de lote"
+
+#. module: base_external_stock
+#: model_terms:ir.ui.view,arch_db:base_external_stock.external_stock_inventory_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: base_external_stock
+#: model:ir.model.fields.selection,name:base_external_stock.selection__external_stock_inventory__state__cancel
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__company_id
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory_config__company_id
+msgid "Company"
+msgstr "Compañia"
+
+#. module: base_external_stock
+#: model:ir.model,name:base_external_stock.model_external_stock_inventory_config
+msgid "Config of auto inventory adjusments of external supplier stock"
+msgstr ""
+"Configuración de ajustes de inventario automáticos de proveedores de stock "
+"externosConfiguración de ajustes de inventario automáticos de proveedores "
+"de stock externos"
+
+#. module: base_external_stock
+#: model:ir.model,name:base_external_stock.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_res_partner__count_external_stock_inventory
+#: model:ir.model.fields,field_description:base_external_stock.field_res_users__count_external_stock_inventory
+msgid "Count External Stock Inventory"
+msgstr "Nº de ajustes de inventario externos"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory_config__count_stock_inventory
+msgid "Count Stock Inventory"
+msgstr "Nº de ajustes de inventario"
+
+#. module: base_external_stock
+#: model_terms:ir.ui.view,arch_db:base_external_stock.external_stock_inventory_config_view_form
+msgid "Create Inventory Adjustment"
+msgstr "Crear ajuste de inventario"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory_config__stock_inventory_ids
+msgid "Created Inventory Adjustments"
+msgstr "Ajustes de inventario creados"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__create_uid
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory_config__create_uid
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory_error_line__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__create_date
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory_config__create_date
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory_error_line__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__date
+msgid "Date"
+msgstr "Fecha"
+
+#. module: base_external_stock
+#: model:ir.model.fields.selection,name:base_external_stock.selection__external_stock_inventory_config__state__disabled
+msgid "Disabled"
+msgstr "Deshabilitado"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__display_name
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory_config__display_name
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory_error_line__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: base_external_stock
+#: model:ir.model.fields.selection,name:base_external_stock.selection__external_stock_inventory__state__done
+msgid "Done"
+msgstr "Hecho"
+
+#. module: base_external_stock
+#: model:ir.model.fields.selection,name:base_external_stock.selection__external_stock_inventory_config__state__enabled
+msgid "Enabled"
+msgstr "Habilitado"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory_error_line__error_msg
+msgid "Error Msg"
+msgstr "Mensaje de error"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory_error_line__error_type
+msgid "Error Type"
+msgstr "Tipo de error"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__error_ids
+msgid "Errors"
+msgstr "Errores"
+
+#. module: base_external_stock
+#. odoo-python
+#: code:addons/base_external_stock/models/external_stock_inventory_config.py:0
+#, python-format
+msgid "Everything went ok. "
+msgstr "Todo fue bien. "
+
+#. module: base_external_stock
+#: model_terms:ir.ui.view,arch_db:base_external_stock.external_stock_inventory_form
+msgid "External Errors"
+msgstr "Errores externos"
+
+#. module: base_external_stock
+#: model:ir.ui.menu,name:base_external_stock.external_inventory_menu
+msgid "External Inventory"
+msgstr "Inventario externo"
+
+#. module: base_external_stock
+#. odoo-python
+#: code:addons/base_external_stock/models/external_stock_inventory_config.py:0
+#: code:addons/base_external_stock/models/res_partner.py:0
+#: model:ir.actions.act_window,name:base_external_stock.external_stock_inventory_action
+#: model:ir.model.fields,field_description:base_external_stock.field_stock_move__external_inventory_adjustment_id
+#: model:ir.model.fields,field_description:base_external_stock.field_stock_move_line__external_inventory_adjustment_id
+#: model:ir.model.fields,field_description:base_external_stock.field_stock_quant__external_inventory_adjustment_id
+#: model:ir.ui.menu,name:base_external_stock.external_stock_inventory_menu
+#, python-format
+msgid "External Inventory Adjustment"
+msgstr "Ajuste de inventario externo"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_res_partner__external_stock_inventory_ids
+#: model:ir.model.fields,field_description:base_external_stock.field_res_users__external_stock_inventory_ids
+#: model_terms:ir.ui.view,arch_db:base_external_stock.external_stock_inventory_config_view_form
+#: model_terms:ir.ui.view,arch_db:base_external_stock.view_partner_form
+msgid "External Inventory Adjustments"
+msgstr "Ajustes de inventario externo"
+
+#. module: base_external_stock
+#: model:ir.actions.act_window,name:base_external_stock.external_stock_inventory_config_action
+#: model:ir.ui.menu,name:base_external_stock.external_stock_inventory_config_menu
+msgid "External Inventory Adjustments Configuration"
+msgstr "Configuración de ajustes de inventario externo"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory_error_line__external_stock_inventory_id
+msgid "External Stock Inventory"
+msgstr "Inventario externo"
+
+#. module: base_external_stock
+#: model:ir.actions.server,name:base_external_stock.cron_external_stock_queue_ir_actions_server
+msgid "External Stock Queues"
+msgstr "Colas de stock externas"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__supplier_id
+msgid "External Supplier"
+msgstr "Proveedor externo"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__has_message
+msgid "Has Message"
+msgstr "Tiene mensaje"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__id
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory_config__id
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory_error_line__id
+msgid "ID"
+msgstr ""
+
+#. module: base_external_stock
+#: model:ir.model.fields,help:base_external_stock.field_external_stock_inventory__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: base_external_stock
+#: model:ir.model.fields,help:base_external_stock.field_external_stock_inventory__message_has_error
+#: model:ir.model.fields,help:base_external_stock.field_external_stock_inventory__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: base_external_stock
+#: model:ir.model.fields,help:base_external_stock.field_external_stock_inventory_config__start_offset
+msgid ""
+"If set, the adjustment will ignore the first products of the external data "
+"source"
+msgstr ""
+"Si se establece, el ajuste de inventario ignorará esos primeros productos "
+"de la fuente de datos externa"
+
+#. module: base_external_stock
+#: model:ir.model.fields,help:base_external_stock.field_external_stock_inventory_config__product_limit
+msgid ""
+"If set, the adjustment will only get those number of products from the "
+"external data source"
+msgstr ""
+"Si se establece, el ajuste de inventario solo obtendrá ese número de "
+"productos de la fuente de datos externa"
+
+#. module: base_external_stock
+#: model:ir.model.fields.selection,name:base_external_stock.selection__external_stock_inventory__state__in_progress
+msgid "In Progress"
+msgstr "En progreso"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__in_progress_offset
+msgid "In Progress Offset"
+msgstr "Offset en progreso"
+
+#. module: base_external_stock
+#. odoo-python
+#: code:addons/base_external_stock/models/external_stock_inventory_config.py:0
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__stock_quant_ids
+#, python-format
+msgid "Inventory Adjustment"
+msgstr "Ajuste de inventario"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__name
+msgid "Inventory Reference"
+msgstr "Referencia de inventario"
+
+#. module: base_external_stock
+#: model:ir.model,name:base_external_stock.model_external_stock_inventory
+msgid "Inventory adjusments of external supplier stock"
+msgstr "Ajustes de inventario de proveedores externos"
+
+#. module: base_external_stock
+#: model:ir.model,name:base_external_stock.model_external_stock_inventory_error_line
+msgid "Inventory adjusments of external supplier stock errors"
+msgstr "Errores en ajustes de inventario de proveedores externos"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__write_uid
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory_config__write_uid
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory_error_line__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__write_date
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory_config__write_date
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory_error_line__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__location_id
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory_config__location_id
+msgid "Location"
+msgstr "Ubicación"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory_config__manual_method
+msgid "Manual Method"
+msgstr "Método manual"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__message_has_error
+msgid "Message Delivery error"
+msgstr "Error de entrega de mensaje"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__message_ids
+msgid "Messages"
+msgstr "Mensajes"
+
+#. module: base_external_stock
+#: model:ir.model.fields,help:base_external_stock.field_external_stock_inventory_config__manual_method
+msgid "Method that will be executed when manually creating an adjustment"
+msgstr "Método que se ejecutará al crear manualmente un ajuste de inventario"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory_config__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de acciones"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__message_has_error_counter
+msgid "Number of errors"
+msgstr "Número de errores"
+
+#. module: base_external_stock
+#: model:ir.model.fields,help:base_external_stock.field_external_stock_inventory__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Número de mensajes que requieren acción"
+
+#. module: base_external_stock
+#: model:ir.model.fields,help:base_external_stock.field_external_stock_inventory__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensajes con un error de entrega"
+
+#. module: base_external_stock
+#: model:ir.model.fields,help:base_external_stock.field_external_stock_inventory_config__batch_size
+msgid ""
+"Number of products that will be fetched from the external data source and "
+"imported at once"
+msgstr ""
+"Número de productos que serán obtenidos de la fuente de datos externa e "
+"importados a la vez"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__config_id
+msgid "Origin"
+msgstr "Origen"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory_config__product_limit
+msgid "Product Limit"
+msgstr "Límite de productos"
+
+#. module: base_external_stock
+#: model:ir.model,name:base_external_stock.model_stock_move_line
+msgid "Product Moves (Stock Move Line)"
+msgstr "Movimientos de producto (línea de movimiento de stock)"
+
+#. module: base_external_stock
+#: model_terms:ir.ui.view,arch_db:base_external_stock.external_stock_inventory_form
+msgid "Progress"
+msgstr "Progreso"
+
+#. module: base_external_stock
+#: model:ir.model,name:base_external_stock.model_stock_quant
+msgid "Quants"
+msgstr "Cantidades"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__rating_ids
+msgid "Ratings"
+msgstr ""
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory_config__start_offset
+msgid "Start Offset"
+msgstr "Offset inicial"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__state
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory_config__state
+msgid "State"
+msgstr "Estado"
+
+#. module: base_external_stock
+#: model:ir.model,name:base_external_stock.model_stock_move
+msgid "Stock Move"
+msgstr "Movimiento de stock"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__count_stock_moves
+msgid "Stock Moves Lines"
+msgstr "Líneas de movimiento de stock"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory_config__supplier_id
+msgid "Supplier"
+msgstr "Proveedor"
+
+#. module: base_external_stock
+#: model:ir.model.fields.selection,name:base_external_stock.selection__external_stock_inventory_config__manual_method__sync
+msgid "Syncronous"
+msgstr "Síncrono"
+
+#. module: base_external_stock
+#: model:ir.model.fields.selection,name:base_external_stock.selection__external_stock_inventory_config__state__test
+msgid "Test"
+msgstr ""
+
+#. module: base_external_stock
+#: model_terms:ir.ui.view,arch_db:base_external_stock.external_stock_inventory_config_view_form
+msgid "Test Connection"
+msgstr "Testear conexión"
+
+#. module: base_external_stock
+#. odoo-python
+#: code:addons/base_external_stock/models/external_stock_inventory_config.py:0
+#, python-format
+msgid "Test results"
+msgstr "Resultados de test"
+
+#. module: base_external_stock
+#: model:ir.model.fields,field_description:base_external_stock.field_external_stock_inventory__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: base_external_stock
+#: model:ir.model.fields,help:base_external_stock.field_external_stock_inventory__website_message_ids
+msgid "Website communication history"
+msgstr ""

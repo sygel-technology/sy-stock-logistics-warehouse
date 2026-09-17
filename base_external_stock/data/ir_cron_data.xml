@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2026 Alberto Martínez <alberto.martinez@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo noupdate="1">
+
+    <record id="cron_external_stock_queue" model="ir.cron">
+        <field name="name">External Stock Queues</field>
+        <field
+            name="model_id"
+            ref="base_external_stock.model_external_stock_inventory_config"
+        />
+        <field name="state">code</field>
+        <field name="code">model.cron_update_external_stock_queue()</field>
+        <field name='numbercall' eval="-1" />
+        <field name='interval_number' eval="5" />
+        <field name='interval_type'>minutes</field>
+        <field name="active">1</field>
+    </record>
+
+</odoo>

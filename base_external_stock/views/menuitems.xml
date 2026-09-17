@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Alberto Martínez <alberto.martinez@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <menuitem
+        id="external_inventory_menu"
+        name="External Inventory"
+        parent="stock.menu_warehouse_config"
+        sequence="10"
+    />
+
+    <menuitem
+        id="external_stock_inventory_config_menu"
+        name="External Inventory Adjustments Configuration"
+        action="external_stock_inventory_config_action"
+        parent="external_inventory_menu"
+        sequence="11"
+    />
+
+    <menuitem
+        id="external_stock_inventory_menu"
+        name="External Inventory Adjustment"
+        action="external_stock_inventory_action"
+        parent="external_inventory_menu"
+        sequence="12"
+    />
+
+</odoo>
