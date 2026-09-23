@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Alberto Martínez <alberto.martinez@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <record id="external_stock_inventory_error_line_tree" model="ir.ui.view">
+        <field name="name">external.stock.inventory.error.line.tree.view</field>
+        <field name="model">external.stock.inventory.error.line</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="error_type" optional="show" />
+                <field name="error_msg" />
+            </tree>
+        </field>
+    </record>
+
+</odoo>

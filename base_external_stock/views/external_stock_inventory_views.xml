@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Alberto Martínez <alberto.martinez@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <record id="external_stock_inventory_form" model="ir.ui.view">
+        <field name="name">external.stock.inventory.form.view</field>
+        <field name="model">external.stock.inventory</field>
+        <field name="priority">1000</field>
+        <field name="arch" type="xml">
+            <form edit="0">
+                <header>
+                    <field
+                        name="state"
+                        widget="statusbar"
+                        statusbar_visible="in_progress,done"
+                    />
+                    <button
+                        name="action_cancel"
+                        type="object"
+                        class="btn-secondary"
+                        string="Cancel"
+                        invisible="state != 'in_progress'"
+                    />
+                </header>
+
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button
+                            type="object"
+                            name="action_view_inventory_adjustment"
+                            class="oe_stat_button"
+                            icon="fa-pencil-square-o"
+                            invisible="not count_stock_quants"
+                        >
+                            <field
+                                name="count_stock_quants"
+                                widget="statinfo"
+                                readonly="1"
+                            />
+                        </button>
+                        <button
+                            type="object"
+                            name="action_view_stock_moves"
+                            class="oe_stat_button"
+                            icon="fa-cubes"
+                            invisible="not count_stock_moves"
+                        >
+                            <field
+                                name="count_stock_moves"
+                                widget="statinfo"
+                                readonly="1"
+                            />
+                        </button>
+                    </div>
+                    <div class="oe_title" name="title">
+                    <label for="name" />
+                    <h1><field name="name" /></h1>
+                </div>
+                    <group>
+                        <group>
+                            <field name="config_id" />
+                            <field name="supplier_id" />
+                            <field name="location_id" />
+                        </group>
+                        <group>
+                            <field name="date" />
+                            <field name="company_id" />
+                        </group>
+                        <group>
+                            <field
+                                name="in_progress_offset"
+                                string="Progress"
+                                invisible="state != 'in_progress'"
+                            />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="errors" string="External Errors">
+                            <group>
+                                <field name="error_ids" nolabel="1" colspan="2" />
+                            </group>
+                        </page>
+                        <!-- <page name="data" string="External Data">
+                            <group>
+                                <field name="data" nolabel="1" colspan="2" />
+                            </group>
+                        </page> -->
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                  <field name="message_follower_ids" widget="mail_followers" />
+                  <field name="message_ids" widget="mail_thread" />
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="external_stock_inventory_tree" model="ir.ui.view">
+        <field name="name">external.stock.inventory.tree.view</field>
+        <field name="model">external.stock.inventory</field>
+        <field name="priority">1000</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+                <field name="config_id" />
+                <field name="location_id" optional="hide" />
+                <field name="supplier_id" optional="hide" />
+                <field
+                    name="state"
+                    widget="badge"
+                    decoration-success="state == 'done'"
+                    decoration-info="state == 'in_progress'"
+                    decoration-muted="state == 'cancel'"
+                />
+                <field name="date" />
+                <field name="company_id" optional="hide" />
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="external_stock_inventory_search">
+        <field name="model">external.stock.inventory</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+                <field name="location_id" />
+                <field name="date" />
+                <field name="state" />
+            </search>
+        </field>
+    </record>
+
+    <record id="external_stock_inventory_action" model="ir.actions.act_window">
+        <field name="name">External Inventory Adjustment</field>
+        <field name="res_model">external.stock.inventory</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+    </record>
+
+</odoo>
