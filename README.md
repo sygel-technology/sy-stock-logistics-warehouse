@@ -16,6 +16,13 @@ Odoo Warehouse Management Addons
 <!-- prettier-ignore-start -->
 
 [//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[base_external_stock](base_external_stock/) | 17.0.1.0.0 |  | Base to sync stock data of suppliers from an external webservice
+
 [//]: # (end addons)
 
 <!-- prettier-ignore-end -->
