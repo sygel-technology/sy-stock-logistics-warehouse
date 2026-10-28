@@ -153,10 +153,9 @@ class ExternalStockInventory(models.Model):
                         "external_inventory_adjustment_id": self.id,
                     }
                 )
-
         # 3. Create new quants and apply inventory changes
         if quants_to_create_vals:
-            quants_to_apply = quant_model.create(quants_to_create_vals)
+            quants_to_apply |= quant_model.create(quants_to_create_vals)
         if quants_to_apply:
             quants_to_apply.action_apply_inventory()
         return quants_to_apply
