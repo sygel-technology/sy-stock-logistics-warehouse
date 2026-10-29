@@ -21,7 +21,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_external_stock](base_external_stock/) | 17.0.1.0.0 |  | Base to sync stock data of suppliers from an external webservice
+[base_external_stock](base_external_stock/) | 17.0.1.1.0 |  | Base to sync stock data of suppliers from an external webservice
 
 [//]: # (end addons)
 

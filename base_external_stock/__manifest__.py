@@ -3,7 +3,7 @@
 {
     "name": "Base External Stock",
     "summary": "Base to sync stock data of suppliers from an external webservice",
-    "version": "17.0.1.0.0",
+    "version": "17.0.1.1.0",
     "category": "Stock",
     "website": "https://github.com/sygel-technology/sy-stock-logistics-warehouse",
     "author": "Sygel",
